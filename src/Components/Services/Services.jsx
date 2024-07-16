@@ -45,7 +45,7 @@ const Services = () => {
     <h3>06</h3>
         <h2>Content writing</h2>
         <p>Web development is the process of building programming..</p>
-        <a href="#" className='readmore'>Read more</a>
+        <a href="#">Read more</a>
     </div>
 </div>
         </div>

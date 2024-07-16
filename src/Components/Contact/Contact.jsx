@@ -7,6 +7,31 @@ import call_icon from '../../assets/download-removebg-preview.png'
 
 
 const Contact = () => {
+
+    const onSubmit = async (event) => {
+        event.preventDefault()
+        const formData = new FormData(event.target);
+        
+        formData.append("access_key", "a9b42e6a-13c1-4d6e-815b-22579e8d5fa4");
+
+        const object = Object.fromEntries(formData);
+        const json =JSON.stringify(object);
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "app;lication/json"
+            },
+            body: json
+        }).then((res) => res.json()); 
+
+
+        if (res.success) {
+            alert(res.message);
+        }
+    };
+
     return (
         <div id='contact' className='contact'>
 <div className="contact-title">
@@ -29,7 +54,7 @@ const Contact = () => {
                 </div>
         </div>
     </div>
-    <form className="contact-right">
+    <form onSubmit={onSubmit} className="contact-right">
         <label htmlFor="">Your Name</label>
         <input type="text" placeholder='Enter your name ' name='name'/>
         <label htmlFor="">Your Email</label>

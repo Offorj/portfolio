@@ -9,7 +9,7 @@ const Hero = () => {
       <div id='home' className='hero'>
         <img src={profile_img} alt="Profile Picture" className='image'/> {/* Added alt attribute */}
         <h1> <span>I'm Offor John,</span> frontend developer based in NIGERIA.</h1>
-        <p>I am a frontend developer from Lagos, NIGERIA with 5 years of experience in multiple companies like Microsoft, Tesla, and Apple.</p>
+        <p>I am a frontend developer from Enugu State, NIGERIA with 5 years of experience in multiple companies like Microsoft, Tesla, and Apple.</p>
         <div className="hero-action">
           <div className="hero-connect"><AnchorLink href="#contact">Connect with me </AnchorLink></div>
           <div className="hero-resume">My resume</div>
