@@ -81,11 +81,16 @@ max-width: 400px;
     }
 }
 @media  screen and (min-width:320px) and (max-width:480px){
+  
+    
+    
     .footer{
+        width: 100%;
         margin: auto;
         gap: 50px;
         background-color: bisque;
         color: black;
+        
     }
     .footer-top-right{
         display: flex;
@@ -101,13 +106,21 @@ max-width: 400px;
 
     }
     .footer-top-left img{
-        margin-left: 20px;
+        margin: auto;
     }
     .footer-bottom-left{
         text-align: center;
     }
     .footer-bottom p{
         text-align: center;
+    }
+    .footer-email-input{
+        display: flex;
+        gap: 30px;
+        padding: 10px;
+        border-radius: 50px;
+        background: #32323B;
+        padding-right: 0px;
     }
     
   
